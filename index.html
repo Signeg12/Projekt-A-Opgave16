@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opgave 16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Terningespil</h1>
+        <p>Hver runde kastes 5 terninger for dig og 5 for computeren. Den højeste enkeltterning vinder runden. Først til 5 point vinder spillet.</p>
+    
+        <div class="flex">
+          <div class="box" id="playerBox">
+            <h3>Spiller</h3>
+            <div class="dice-row" id="playerDice" aria-live="polite"></div>
+            <div class="score">Runder vundet: <span id="playerScore">0</span></div>
+            <div>Højeste i runde: <span id="playerHigh">-</span></div>
+          </div>
+    
+          <div class="box" id="computerBox">
+            <h3>Computer</h3>
+            <div class="dice-row" id="computerDice" aria-live="polite"></div>
+            <div class="score">Runder vundet: <span id="computerScore">0</span></div>
+            <div>Højeste i runde: <span id="computerHigh">-</span></div>
+          </div>
+        </div>
+    
+        <div class="controls">
+          <button id="rollBtn">Kast terninger</button>
+          <button id="resetBtn">Start forfra</button>
+          <div id="message" role="status" aria-live="polite">Velkommen! Tryk <strong>Kast terninger</strong> for at starte.</div>
+        </div>
+    
+        <div id="final" style="margin-top:12px;"></div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>
