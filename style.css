@@ -1,4 +1,11 @@
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f7f7f8; color:#222; padding:20px; display:flex; justify-content:center; }
+body { 
+    font-family: "Helvetica Neue"; 
+    background:#f7f7f8; 
+    color:#222; 
+    padding:20px; 
+    display:flex; 
+    justify-content:center; 
+}
 .container { 
     max-width:800px; 
     width:100%; 
@@ -71,7 +78,6 @@ button:hover{
     color:white; 
 }
 #message { 
-    margin-top:14px; 
     padding:10px 12px; 
     border-radius:8px; 
     background:#fff4e6; 
